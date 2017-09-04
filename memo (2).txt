@@ -1,0 +1,6 @@
+socket js https:// -> //
+.py port
+
+docker stop `docker ps -a -q` && docker rm `docker ps -a -q`
+docker build -t share1 /root/batest2 && docker run -d --name contena1 -p 80:80 share1
+docker logs -f `docker ps -q`
