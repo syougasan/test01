@@ -1,0 +1,217 @@
+
+
+デプロイ
+	ローカル開発
+		push git
+	単体テスト
+		
+	総合テスト
+		ステージング
+			aws ssh
+			build
+				pull git
+				push dockerhub
+			gui
+				pull dockerhub
+	リリース
+		本番
+			gui
+				pull dockerhub
+運用
+	スケールアップ
+	コンテナ停止
+		nginx停止
+		uwsgi停止
+		flask停止
+		→コンテナ入替え
+	EC2停止
+	稼動状況
+		コンテナ
+		コンテナ以外
+	不具合調査
+		alb
+		nginx
+		uwsgi
+		flask
+		APP
+	復旧・
+		AMI
+
+
+
+------------------------------------------------------
+css mobile
+select2
+box top moved
+
+box main layout
+box my layout
+box group layout
+
+box background
+box brink
+
+modal movie layout
+modal movie autotext
+modal share layout
+
+user
+	add,upd,del
+	ninzu,addcnt
+	img upload
+voice chk hide
+msg   chk hide
+
+ファイルサーバ
+ファイル分割
+------------------------------------------------------
+docker
+	ログローテート
+
+------------------------------------------------------
+Cloud Speech API
+Cloud Translation API
+Data Studio
+
+------------------------------------------------------
+
+聴覚
+文字お越し
+旅行
+	モノラル*2
+無音
+	ap側で
+GUI
+
+------------------------------------------------------
+
+------------------------------------------------------
+形態素
+	月別タブ
+		文字グラフ
+		棒グラフ top10
+		Treemap
+		画像api
+			Pixabay API
+	日数トレンド
+	感情分析
+	wiki api
+		品詞分解後
+		http://qiita.com/yubessy/items/16d2a074be84ee67c01f
+
+つながり
+	bipartite-graph
+
+利用状況
+	テーブル
+		ログイン ログアウト履歴
+		※100件
+		(※3)
+
+	全体投稿数(※2) と 月別(※1)
+
+	全体メッセージ数(※2) と 月別(※1)
+	※直近100件(※3)
+
+	総動画利用時間(※2) と 月別(※1)
+	※直近100件(※3)
+
+	設定
+		(※6) モーダル
+		(※7) アップロード
+		http://studio-key.com/1940.html
+		http://kachibito.net/snippets/how-to-display-multiple-files-properties-using-jquery
+
+
+------------------------------------------------------
+ユーザ管理
+	ユーザ改廃(※6)
+	画像一覧(※7)
+	\グループ改廃
+	\リンク
+
+メッセージ管理
+	検索窓(※5)
+	ボイス(※3)
+	トーク(※3)
+	・検索・・・テーブル生成
+	・匿名、上限
+
+料金管理
+	月額グラフ(※4) 当月分も
+	内訳
+
+
+※1 棒グラフ 可変
+※2 BGアイコン
+※3 テーブル
+※4 積み上げ棒グラフ
+※5 選択 日付 キーワード 検索ボタン
+※6 モーダル
+※7 画像一覧
+
+------------------------------------------------------
+動画
+
+■スクリーンシェア
+<i class="fa fa-window-restore"></i>
+
+MYユーザ
+	パスワード
+選択ユーザ
+	プロフィール
+
+------------------------------------------------------
+
+DDOS
+ブルートフォース
+	ELB
+
+ログイン2段階
+アクセスゾーン指定
+ログイン試行回数
+
+ip制限
+https://api.ipify.org?format=json
+
+jquery認証
+https通信
+https://qiita.com/everatch/items/751983a6da492e4563f8
+
+
+------------------------------------------------------
+通知
+
+スクロール 読込み
+オーバーレイ
+
+DB連続アクセス対策
+	redis
+	webstrage
+	スクロールバー検知
+	http://studio-key.com/798.html
+
+グループ機能
+	タブで分割
+	ボイスなしレイアウト
+
+スマホ対応 css
+	css
+	http://life-blog.link/programming/css/post-1747
+
+ブラウザタブなどで複数ログイン対応
+	socket の id 確保
+	アクセスのたびに id 確認
+	相違がある場合
+		既存の方を切断
+		切断の前にemit + オーバーレイ & メッセージ
+		切断
+
+サニタイズ 日本語
+
+テストスイート
+
+ボイス画像
+トーク画像
+画像管理
+
